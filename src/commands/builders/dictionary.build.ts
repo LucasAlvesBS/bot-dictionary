@@ -14,5 +14,21 @@ export const dictionaryBuild = {
       description: 'Enter the term you want to know',
       required: true,
     },
+    {
+      name: 'language',
+      type: ApplicationCommandOptionType.String,
+      description: 'Choose the language you want',
+      required: true,
+      choices: [
+        {
+          name: 'English',
+          value: 'en',
+        },
+        {
+          name: 'Português',
+          value: 'pt',
+        },
+      ],
+    },
   ],
 };
