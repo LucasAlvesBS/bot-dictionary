@@ -1,5 +1,4 @@
-import { leaderboardInteraction } from '@commands/interactions/leaderboard.interaction';
-import { resetLeaderboardInteraction } from '@commands/interactions/reset-leaderboard.interaction';
+import { dictionaryInteraction } from '@commands/interactions/dictionary.interaction';
 import { registerCommands } from '@commands/register-commands';
 import { credentials } from '@config/credentials';
 import { checkDiscordToken } from '@helpers/functions/discord-token.function';
@@ -24,3 +23,5 @@ client.on('ready', () => {
 });
 
 registerCommands(rest);
+
+dictionaryInteraction(client);
