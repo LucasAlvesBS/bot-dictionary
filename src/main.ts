@@ -5,10 +5,7 @@ import { checkDiscordToken } from '@helpers/functions/discord-token.function';
 import { Client, GatewayIntentBits, Partials, REST } from 'discord.js';
 
 const client = new Client({
-  intents: [
-    GatewayIntentBits.Guilds,
-    GatewayIntentBits.GuildMessages,
-  ],
+  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages],
   partials: [Partials.Channel],
 });
 
